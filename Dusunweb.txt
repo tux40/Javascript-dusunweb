@@ -1,0 +1,585 @@
+Nodejs
+Variabel -> Static & dinamic
+const = static
+let = dinamis
+Operan = Variabel
+Control Flow = Perempatan
+========================
+comparasion
+== sama dengan
+=== equivalent (sama nilai dan tipe datanya)
+!= tidak sama dengan
+!== tidak sama dengan equivalent
+========================
+Array
+Mempunyai key & value 
+const
+
+const a = 2
+const b = 3.4
+const c = 'hallo'
+const d = trus
+const e = [2,5,4,3,2]
+const g = [3,4,3]
+
+//document.write(e.length)
+const f = e + g
+//document.write(a++)
+
+let x = 5
+x += 4
+x += 5
+x += 3
+x += 2
+//document.write(x)
+
+let y = 2
+y ** =s
+document.write=y
+
+const total_uang=200000
+
+const total_uang = 2000000
+const sulung = 700000
+const nomer2 = 350000
+const nomer3 = 500000
+const bungsu = 250000
+
+//soal pertama
+document.write('Soal Pertama','<br>')
+document.write(total_uang + '<br>')
+document.write(sulung + '<br>')
+document.write(bungsu + '<br>')
+document.write('nama sibungsu abdullah', '<br>','<br>')
+//soal kedua
+document.write('Soal Kedua','<br>')
+if (nomer3 > sulung){
+  document.write('Uang nomer 3 lebih besar dari si sulung benar')
+}else {
+ document.write('Uang nomer 3 lebih besar dari si sulung  = tidak benar', '<br>')
+}
+
+//
+if (nomer2 < sulung && nomer2 > nomer3){
+  document.write('uang nomer 2 diantara uang sisulung dan nomer 3 = benar')
+} else {
+  document.write('tidak benar')
+}
+
+
+//control flow
+//const x = '10'
+//if (x > 5 ){
+//  document.write('oke lah')
+//} else if (x > 20){
+//  document.write ('hmm')
+//} else {
+//  document.write('ga lah')
+//}
+
+//Looping 
+let i = 0
+while (i < 20){
+	document.write(i)
+	i++
+}
+
+document.write('<br>')
+let i= 5
+i += 1
+while (i <= 15){
+  document.write(i)
+  i +=2 
+}
+
+
+===
+//soal ketiga
+document.write('Soal Ketiga','<br>')
+document.write('Array','<br>')
+let uang = [700,350,500,250]
+document.write(uang, '<br>','<br>')
+document.write('Array Dengan For','<br>')
+for (a = 0 ; a < uang.length ; a++){
+  document.write(uang[a],'<br>')
+}
+document.write('<br>')
+document.write('Array Dengan While','<br>')
+b = 0
+while (b < uang.length){
+  document.write(uang[b], '<br>')
+  b++
+}
+
+document.write('<br>')
+document.write('Array 1 s.d 20','<br>')
+
+let angka = 1
+while (angka <= 20){
+  document.write(angka)
+  angka++
+}
+
+document.write('<br>','<br>')
+document.write('Array dengan angka Genap','<br>')
+let angka_genap = 1
+angka_genap +=1
+while (angka_genap <= 20){
+  document.write(angka_genap)
+  angka_genap +=2
+}
+
+document.write('<br>','<br>')
+document.write('Array dengan angka Ganjil','<br>')
+let angka_ganjil = 1
+while (angka_ganjil <= 20){
+  document.write(angka_ganjil)
+  angka_ganjil +=2
+}
+
+
+document.write('<br>','<br>')
+document.write('Function','<br>')
+/**
+ *
+ */
+function tambah (x,y){
+  return x + y
+}
+function kurang (x,y){
+  return x - y
+}
+function kali (x,y){
+  return x * y
+}
+function bagi (x,y){
+  return x / y
+}
+document.write(tambah(sulung, nomer2, '<br>'))
+document.write('<br>','<br>')
+
+//Function
+let total = 0
+function uangMereka(){
+  total = tambah(total, sulung)
+  total = tambah(total, nomer2)
+  total = tambah(total, nomer3)
+  total = tambah(total, bungsu)
+}
+//sebuah prosedur
+uangMereka()
+document.write(total)
+document.write('<br>','<br>')
+function uangMereka(){
+  let total = 0
+  
+  total = tambah(total, sulung)
+  total = tambah(total, nomer2)
+  total = tambah(total, nomer3)
+  total = tambah(total, bungsu)
+
+  return = total
+}
+const result = uangMereka()
+document.write(result)
+
+//
+const namaku = 'Aria Nanda Nofriansyah'
+let arrNama = namaku.split(' ')
+// document.write(arrNama)
+const Lastname = 'Nasution'
+let Namabaru = ''
+for (let i = 0 ; i < arrNama.length - 1 ; i++){
+  if(i != arrNama.length - 1 )
+    Namabaru += arrNama[i] + ' '
+}
+document.write(Namabaru + Lastname)
+//
+
+const arr_uangSulung = [700000]
+const arr_uangnomer2 = [350000]
+const arr_uangnomer3 = [500000]
+const arr_uangbungsu = [250000]
+
+let sabun = 3000
+let sampo = 1500
+let pastagigi = 7000
+let gula = 18000
+let kopi = 9000
+let lego = 120000
+let hotwheel = 50000
+let mobilplastik = 24000
+
+function tambah (x,y){
+  return x + y
+}
+
+function kali (x,y){
+  return x * y
+}
+let total_belanjaSulung = 0
+let beliSabun = 0
+let beliSampo = 0
+let sabunsampo = 0
+
+function belanjaSulung() { 
+  beliSabun = kali(2, sabun) 
+  beliSampo = kali(2, sampo)
+  sabunsampo = tambah(beliSabun, beliSampo)
+  total_belanjaSulung = tambah(pastagigi, sabunsampo)
+}
+// let harga_sabun = kali (2,sabun) 
+// document.write(harga_sabun)  
+belanjaSulung()
+document.write('Uang Si Sulung = ', arr_uangSulung)
+document.write('<br>')
+document.write('Total Belanja Sulung = ' + ' ' +total_belanjaSulung)
+document.write('<br>')
+if(total_belanjaSulung > arr_uangSulung){
+  document.write('Uang Belanja Sulung Tidak Cukup')
+} else {
+  document.write('Uang Belanja Sulung Cukup')
+}
+document.write('<br>','<br>')
+
+let total_belanjaNomer2
+let beligula = 0
+let belikopi = 0
+function belanjaNomer2() { 
+  beligula = tambah(beligula, gula) 
+  belikopi = kali(3, kopi)
+  total_belanjaNomer2 = tambah(beligula, belikopi)
+}
+// let harga_sabun = kali (2,sabun) 
+// document.write(harga_sabun)  
+belanjaNomer2()
+document.write('Uang Nomer2 = ', arr_uangnomer2)
+document.write('<br>')
+document.write('Total Belanja Nomer 2 = ' + ' ' + total_belanjaNomer2)
+document.write('<br>')
+if(total_belanjaNomer2 > arr_uangnomer2){
+  document.write('Uang Belanja Nomer2 tidak cukup')
+} else {
+  document.write('Uang Belanja Nomer2 Cukup')
+}
+document.write('<br>','<br>')
+
+let total_belanjaNomer3 = 0
+let belilego = 0
+let belihotwheel = 0
+
+function belanjaNomer3() { 
+  belilego = kali(2, lego) 
+  belihotwheel = kali(5, hotwheel)
+  total_belanjaNomer3 = tambah(belilego, belihotwheel)
+}
+// let harga_sabun = kali (2,sabun) 
+// document.write(harga_sabun)  
+belanjaNomer3()
+document.write('Uang Nomer3 = ', arr_uangnomer3)
+document.write('<br>')
+document.write('Total Belanja Nomer 3 = ' + ' ' + total_belanjaNomer3)
+document.write('<br>')
+
+if(total_belanjaNomer3 > arr_uangnomer3){
+  document.write('Uang Belanja Nomer3 Tidak Cukup')
+} else {
+  document.write('Uang Belanja Nomer3 Cukup')
+}
+document.write('<br>','<br>')
+
+let total_belanjaBungsu = 0
+let belimobilplastik = 0 
+function belanjaBungsu() { 
+  belimobilplastik = kali(8, mobilplastik) 
+  total_belanjaBungsu = tambah(total_belanjaBungsu, belimobilplastik)
+}
+// let harga_sabun = kali (2,sabun) 
+// document.write(harga_sabun)  
+belanjaBungsu()
+document.write('Uang Si Bungsu = ', arr_uangbungsu)
+document.write('<br>')
+document.write('Total Belanja Bungsu = ' + ' ' + total_belanjaBungsu)
+document.write('<br>')
+if(total_belanjaBungsu > arr_uangbungsu){
+  document.write('Uang Belanja Bungsu Tidak Cukup')
+} else {
+  document.write('Uang Belanja Bungsu Cukup')
+}
+document.write('<br>','<br>')
+
+let grandtotal = 0
+function grandTotal(){
+  grandtotal = tambah(grandtotal, total_belanjaSulung)
+  grandtotal = tambah(grandtotal, total_belanjaNomer2)
+  grandtotal = tambah(grandtotal, total_belanjaNomer3)
+  grandtotal = tambah(grandtotal, total_belanjaBungsu)
+}
+document.write('<br>')
+grandTotal()
+document.write('Total Belanja Semua Anak = ',grandtotal)
+document.write('<br>')
+
+let total_uangAnak2 = 0
+function UangAnak2(){
+  total_uangAnak2 = tambah(total_uangAnak2, arr_uangSulung[0])
+  total_uangAnak2 = tambah(total_uangAnak2, arr_uangnomer2[0])
+  total_uangAnak2 = tambah(total_uangAnak2, arr_uangnomer3[0])
+  total_uangAnak2 = tambah(total_uangAnak2, arr_uangbungsu[0])
+}
+document.write('<br>')
+UangAnak2()
+document.write('Total Uang Anak Anak = ', total_uangAnak2)
+document.write('<br>')
+document.write('<br>')
+if(grandtotal > total_uangAnak2){
+  document.write('Ayah Akan Membayar Kekurangan')
+} else {
+  document.write('Ayah Tidak Perlu Membayar Kekurangan Karena Total Belanja Masih Dibawah 1800000')
+}
+
+/*
+ * Soal Homework 2
+ */
+
+berikut homework 2 (poin 10):
+story
+sebuah rw mendata rakyatnya didapati
+- KK sebanyak 300
+- usia dibawah 5 tahun sebanyak 70
+- laki2 100 orang
+- perempuan sisanya
+- banci diusir
+- usia diatas 65 tahun sebanyak 120
+
+Pertanyaan
+- berapa total perempuan?
+- berapa total remaja dan dewasa?
+- berapa total yang sudah mendapatkan KTP
+
+//
+document.write('<b>','Homework 2','<br>')
+document.write('<br>')
+const kk  = 300
+const laki2 = 100
+const usia_dibawah5 = 70
+const usia_diatas65 = 120
+document.write('Jumlah KK = ',kk ,'<br>')
+function kurang (x,y){
+  return x - y
+}
+function tambah (x,y){
+  return x + y
+}
+
+document.write('Total Laki Laki = ', laki2)
+document.write('<br>')
+
+let totalWanita = 0
+ function wanita(){
+   totalWanita = kurang(kk, laki2)
+ }
+
+wanita()
+document.write('Total Wanita = ', totalWanita)
+document.write('<br>')
+
+let remajadanDewasa = 0
+let totalremajaDewasa
+function remajaDewasa(){
+  remajadanDewasa= tambah(usia_dibawah5, usia_diatas65)
+  totalremajaDewasa = kurang(kk,remajadanDewasa)
+}
+remajaDewasa()
+document.write('Total Remaja Dan Dewasa = ',totalremajaDewasa)
+
+
+//
+homework 3 (poin 18):
+story
+pak pandi mendapatkan project sebesar 900 juta dan deadline 6 bulan, dibagilah task bersama teman2nya, 1 pm, 2 senior developer, dan 2 junior developer
+pm mendapat 30%, senior 15jt/bulan, junior 6jt/bulan
+pertanyaan
+- berapa total biaya sampai deadline selesai?
+- berapa yang diterima pm?
+- berapa yang dibutuhkan untuk pengembangan project?
+- cukupkah harga project itu?
+- kalo tidak cukup, darimana pak pandi mendapat tambahan biaya?
+- mampukah deadline tercapai?
+//
+
+/* Home Work 2 & 3
+ *
+ */
+ 
+document.write('<b>','Homework 2','<br>')
+document.write('<br>')
+const kk  = 300
+const laki2 = 100
+const usia_dibawah5 = 70
+const usia_diatas65 = 120
+document.write('Jumlah KK = ',kk ,'<br>')
+document.write('<br>')
+function kurang (x,y){
+  return x - y
+}
+function tambah (x,y){
+  return x + y
+}
+
+document.write('Total Laki Laki = ', laki2)
+document.write('<br>')
+
+let totalWanita = 0
+ function wanita(){
+   totalWanita = kurang(kk, laki2)
+ }
+
+wanita()
+document.write('Total Wanita = ', totalWanita)
+document.write('<br>')
+
+let remajadanDewasa = 0
+let totalremajaDewasa
+function remajaDewasa(){
+  remajadanDewasa= tambah(usia_dibawah5, usia_diatas65)
+  totalremajaDewasa = kurang(kk,remajadanDewasa)
+}
+remajaDewasa()
+document.write('Total Remaja Dan Dewasa = ',totalremajaDewasa)
+
+document.write('<br>')
+let totalktp = 0
+function punyaktp(){
+  totalktp = tambah(usia_diatas65, totalremajaDewasa)
+}
+punyaktp()
+document.write('Yang sudah mendapatkan KTP adalah Remaja, Dewasa, Usia diatas 65 = ',totalktp)
+document.write('<br>')
+//Homework 3
+document.write('===============================================================================')
+document.write('<br>','<br>')
+document.write('Homework 3')
+document.write('<br>','<br>')
+const nilai_project = 900
+const dev_junior = 6
+const dev_senior = 15
+const deadline = 6 
+
+function tambah (x,y){
+	return x + y 
+}
+function kali (x,y){
+  return x * y
+}
+function bagi (x,y){
+  return x / y
+}
+function kurang(x,y){
+  return x -y 
+}
+
+let junior_dev = 2 
+let senior_dev = 2
+let proj_man = 1
+let proman_fee = 0
+function buat_proman(){
+  proman_fee = kali(30, nilai_project)
+  proman_fee = bagi(proman_fee, 100)
+}
+
+
+buat_proman()
+// document.write('Fee Yang Diterima Project Manager = ', proman_fee, ' Juta')
+
+
+let biaya_project1 = 0
+let biaya_project2 = 0
+let biaya1_2 = 0
+ 
+function total_biaya(){
+  biaya_project1 = kali (6, 6)
+  biaya_project2 = kali (15, 6)
+  biaya1_2 = tambah (biaya_project1, biaya_project2)
+  biaya1_2 = tambah (biaya1_2, proman_fee)
+}
+let sisa = 0 
+function sisa_project(){
+  sisa = kurang (nilai_project, biaya1_2)
+}
+let buat_pengembangan = 0
+function pengembangan(){
+  buat_pengembangan = kali (2, biaya1_2)
+}
+
+
+total_biaya()
+sisa_project()
+pengembangan()
+document.write('Total Biaya Sampai Deadline Selesai = ',biaya1_2, ' Juta', '<br>')
+document.write('Fee Yang Diterima Project Manager = ', proman_fee, ' Juta', '<br>')
+// document.write('Sisa Dari Nilai Project di kurang biaya biaya selama 6 bulan atau timeline = ' ,sisa, ' Juta', '<br>')
+document.write('Biaya Pengambangan Estimasinya adalah 2 kali dari Develop Awal = ' ,buat_pengembangan, ' Juta', '<br>')
+
+// document.write('Fee Developer Junior Selama 6 Bulan = ',biaya_project1, ' Juta','<br>')
+// document.write('Fee Developer Senior Selama 6 Bulan = ',biaya_project2, ' Juta','<br>')
+document.write('Harga Project Cukup Apabila Tidak Nombok, Maka Jawabannya adalah', '<br>')
+if (biaya1_2 > nilai_project){
+  document.write('--','Nombok','---','<br>')
+} else {
+  document.write('---','Tidak Nombok','---','<br>')
+} 
+document.write('Mampukah Deadline Tercapai, Jika Mampu Maka jawabannya Adalah ','<br>')
+if (deadline > 6){
+  document.write('--- Timeline Molor dari deadline ---','<br>')
+} else {
+  document.write('--- Sesuai Deadline ---', '<br>','<br>')
+}
+document.write('Selesai Tugasnya')
+
+
+
+
+
+
+
+
+
+//
+As you can see the for loop statement uses three expressions: the initialization, the condition, and the final expression. 
+The final expression is executed at the end of each loop execution. It is commonly used to increment the index.
+
+//
+If you need to stop a loop you can use the break statement, or set the index to the length of the arrray or to a value that makes the statement no longer true. 
+
+//
+I used this technique in my Single Page App Router. When I composed my SPA's routes I would use the route slug as the index and the value the view's object.
+
+I remember reading about Netflix dealing with memory leaks in the Express routing engine several years ago. The problem they encountered was due to the route engine using traditional arrays to manage routes.
+
+They experienced memory leaks because they update the site hundreds if not thousands of times a day. Each time an update was published the updated page data was added to the express route table.
+
+Unfortunately, due to it being a simple array duplicate routes were added. The amount of overhead to keep the route table clean was heavy.
+
+This story caused me to review how I handled my SPA routes. Fortunately, I could not have this problem because I was using associative arrays.
+//
+Function adalah blok kode untuk melakukan tugas tertentu (urutan peristiwa)
+//
+parameter adalah sebuah variabel / nilai yang di tanamkan dan untuk di olah
+//
+didalam code itu sebenarnya adalah isinya function function
+//
+perbedaan prosedur dengan function (function tanpa return disebut prosedur)
+// 
+Array adalah untuk menyimpan banyak value
+//
+string itu bisa di pecah pecah menjadi array dengan cara split
+//
+
+
+
+
+
+
+
+
